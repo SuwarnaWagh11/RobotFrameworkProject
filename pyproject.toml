@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "robotframeworkproject"
+version = "0.1.0"
+description = "This project is created for automation testing practice purpose only"
+authors = ["Suwarna_Wagh <2zo756s3g6av2j435b5zvaf26xp724eshz7svp5ae26xclxdcyva>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+robotframework = "^6.1"
+robotframework-browser = "^17.1.0"
+robotframework-requests = "^0.9.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
