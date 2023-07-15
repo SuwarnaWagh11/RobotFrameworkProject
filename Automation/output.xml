@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230715 23:26:07.629" rpa="false" schemaversion="4">
+<suite id="s1" name="Input" source="C:\Project\RobotFrameworkProject\Automation\input.robot">
+<test id="s1-t1" name="InputBox" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230715 23:26:07.775" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20230715 23:26:07.775" endtime="20230715 23:26:09.691"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230715 23:26:09.692" endtime="20230715 23:26:09.806"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230715 23:26:11.807" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230715 23:26:09.806" endtime="20230715 23:26:11.807"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://textarea[@name='q']</arg>
+<arg>Amazon Login</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230715 23:26:11.809" level="INFO">Typing text 'Amazon Login' into text field 'xpath://textarea[@name='q']'.</msg>
+<status status="PASS" starttime="20230715 23:26:11.808" endtime="20230715 23:26:11.890"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230715 23:26:11.891" level="INFO">Clicking button 'xpath:/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]'.</msg>
+<status status="PASS" starttime="20230715 23:26:11.891" endtime="20230715 23:26:12.046"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230715 23:26:14.048" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230715 23:26:12.047" endtime="20230715 23:26:14.048"/>
+</kw>
+<status status="PASS" starttime="20230715 23:26:07.774" endtime="20230715 23:26:14.049"/>
+</test>
+<status status="PASS" starttime="20230715 23:26:07.631" endtime="20230715 23:26:14.051"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Input">Input</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
